@@ -1,0 +1,83 @@
+<app-menu></app-menu>
+<main>
+<div
+  id="myCarousel"
+  class="carousel slide carousel-fade"
+  data-bs-ride="carousel"
+>
+  <ol class="carousel-indicators">
+    <li data-bs-target="myCarousel" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="myCarousel" data-bs-slide-to="1"></li>
+    <li data-bs-target="myCarousel" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" >
+    <div class="carousel-item active " data-interval="2000">
+      <div
+        class="overlay-image"
+        style="background-image: url(../../assets/Image/blog_image_1.jpg)"
+      ></div>
+      <div class="carousel-caption d-none d-md-block" >
+        
+          <h1 *ngIf="!nombreUsuario" class="display-4">Hello, world!</h1>
+          <h1 *ngIf="nombreUsuario" class="display-4">Hello, {{nombreUsuario}}</h1>
+          <p class="lead">Si lo que buscas es aprender a instalar software para mejorar tu inventario.</p>
+          <hr class="my-4">
+          <p>Estas en el lugar Correcto, Dale click aqui!</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="1000">
+      <div
+        class="overlay-image"
+        style="background-image: url(../../assets/Image/blog_image_2.png)"
+      ></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 *ngIf="!nombreUsuario" class="display-4">Hello, world!</h1>
+          <h1 *ngIf="nombreUsuario" class="display-4">Hello, {{nombreUsuario}}</h1>
+          <p class="lead">Buscas informacion sobre juegos para mejorar tus habilidades?, o como obtenerlos en tu computadora.</p>
+          <hr class="my-4">
+          <p>Estas en el lugar Correcto, Dale click aqui!</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="500">
+      <div
+        class="overlay-image"
+        style="background-image: url(../../assets/Image/blog_image_3.jpg)"
+      ></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 *ngIf="!nombreUsuario" class="display-4">Hello, world!</h1>
+          <h1 *ngIf="nombreUsuario" class="display-4">Hello, {{nombreUsuario}}</h1>
+          <p class="lead">Descubre aqui muchos temas sobre la programacion y el diseño de paginas web, nuevas tecnologias.</p>
+          <hr class="my-4">
+          <p>Estas en el lugar Correcto, Dale click aqui!</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </div>  
+  </div>
+  <a
+    href="#myCarousel"
+    class="carousel-control-prev"
+    role="button"
+    data-bs-slide="prev"
+  >
+    <span class="sr-only"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a
+    href="#myCarousel"
+    class="carousel-control-next"
+    role="button"
+    data-bs-slide="next"
+  >
+    <span class="sr-only"></span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
+</main>
+<br>
+<br>
+<br>
+<app-contenido></app-contenido>
+<app-footer></app-footer>
